@@ -1,10 +1,14 @@
 import React from 'react'
+import PrivateRoutes from '../Components/PrivateRoutes'
 
-const PrivateLayout = () => {
+const PrivateLayout = ({children}) => {
     return (
-        <div>
-            mi rama privada
-        </div>
+       <PrivateRoutes>
+           <div>
+               este es mi PrivateRoute con la validacion de permisos
+               {children}
+           </div>
+       </PrivateRoutes>
     )
 }
 
