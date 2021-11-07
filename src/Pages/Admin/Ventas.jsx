@@ -3,7 +3,7 @@ import React from 'react'
 const Ventas = () => {
     return (
         <div>
-            estas son las Ventas
+            este es el control de las Ventas
         </div>
     )
 }

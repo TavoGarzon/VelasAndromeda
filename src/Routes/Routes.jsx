@@ -6,8 +6,8 @@ import {
   } from "react-router-dom";
 import PrivateLayout from '../Layout/PrivateLayout';
 import PublicLayout from '../Layout/PublicLayout';
-import Dashboard from '../Pages/Admin/Dashboard';  
-import Roles from '../Pages/Admin/Roles';
+import Productos from '../Pages/Admin/Productos';
+import Usuarios from '../Pages/Admin/Ususarios';
 import Ventas from '../Pages/Admin/Ventas';
 import Features from '../Pages/Public/Features';
 import Index from '../Pages/Public/Index';
@@ -17,14 +17,14 @@ const Routes = () => {
         <div>
             <Router>
                 <Switch>
-                    <Route path={['/dash', '/roles', '/ventas']}>
+                    <Route path={['/prod', '/user', '/ventas']}>
                         <PrivateLayout>
                             <Switch>
-                                <Route path='/dash'>
-                                    <Dashboard/>
+                                <Route path='/prod'>
+                                    <Productos/>
                                 </Route>
-                                <Route path='/roles'>
-                                    <Roles/>
+                                <Route path='/user'>
+                                    <Usuarios/>
                                 </Route>
                                 <Route path='/ventas'>
                                     <Ventas />
